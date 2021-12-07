@@ -16,8 +16,8 @@ public class Main {
         Student student6 = new Wirtschaftsstudent("Turtle", "Wirtschaft", 4.6, false);
 
         University hogwarts = new University("Hogwarts", new Student[]{student1, student2, student3, student4, student5});
-
         Student[] students = hogwarts.listStudents();
+
         System.out.println(Arrays.toString(students));
         System.out.println("Student Count: " +  hogwarts.getStudentCount());
         System.out.println("Best Student: " + hogwarts.getBestStudent());

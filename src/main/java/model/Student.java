@@ -64,14 +64,4 @@ public abstract class Student {
 
     abstract public int anzahlModule();
 
-
-/*
-    @Override
-    public String toString() {
-        return "StudentMain{" +
-                "name='" + name + '\'' +
-                ", course='" + course + '\'' +
-                '}';
-    }
-    */
 }
