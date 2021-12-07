@@ -25,7 +25,7 @@ public class Main {
         System.out.println();
         hogwarts.addStudent(student6);
         System.out.println(Arrays.toString(hogwarts.listStudents()));
-        hogwarts.removeStudent(student3);
+        hogwarts.removeStudent(student2);
         System.out.println(Arrays.toString(hogwarts.listStudents()));
         System.out.println("Representative: " + hogwarts.getStudentRepresentative());
         hogwarts.setStudentRepresentative(students[0]);
