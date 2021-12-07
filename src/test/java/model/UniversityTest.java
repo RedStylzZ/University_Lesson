@@ -53,8 +53,8 @@ class UniversityTest {
 
     @Test
     void checkAddStudent() {
-        Student[] students = new Student[]{student1, student2, student3, student4, student5};
-        Student[] students2 = new Student[]{student1, student2, student3, student4, student5, student6};
+        Student[] students = new Student[5];
+        Student[] students2 = new Student[6];
         assertEquals(students.length, hogwarts.listStudents().length);
         hogwarts.addStudent(student6);
         assertEquals(students2.length, hogwarts.listStudents().length);
@@ -63,11 +63,11 @@ class UniversityTest {
 
     @Test
     void checkRemoveStudent() {
-        Student[] students = new Student[]{student1, student2, student3, student4, student5};
-        Student[] students2 = new Student[]{student1, student2, student4, student5};
+        Student[] students = new Student[5];
+        Student[] students2 = new Student[4];
         assertEquals(students.length, hogwarts.listStudents().length);
-        hogwarts.removeStudent(student3);
-        assertEquals(students.length, hogwarts.listStudents().length);
+        hogwarts.removeStudent(student1);
+        assertEquals(students2.length, hogwarts.listStudents().length);
     }
 
 }
